@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        li{
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            border: 10px solid #0f0;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        th{
+            background-color: rgb(7, 89, 92);
+            color: white;
+        }
+        tfoot td{
+            border: 0px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    <title>Exercício 4</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Cadastro de Listagem de Pontos</h1>
+            <hr>
+            <form >
+                <label for="motivo">Motivo: </label>
+                <input type="text" name="motivo" id="motivo">
+                <label for="data">Data: </label>
+                <input type="date" name="data" id="data">
+                <label for="tipo">Tipo: </label>
+                <select name="select" id="tipo">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <input type="submit" value="Registrar Ponto">
+            </form>
+            <hr>
+        </section>
+        <section>
+            <ul>
+                <li><b>Nome:</b> José da Silva </li>
+                <li><b>Cargo:</b> Portaria</li>
+            </ul>
+            <table>
+                <caption>
+                    <small>Registros de Ponto</small>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Data</td>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td colspan="2">Folga</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Data</td>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td colspan="2">Folga</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Data</td>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td colspan="2">Folga</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Data</td>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td>Hora</td>
+                        <td>Hora</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <p>Texto do Tfoot</p></td>
+                    </tr>
+                </tfoot>
+                    
+                </table>
+            </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Texto do Rodapé &REG;</p>
+    </footer>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
